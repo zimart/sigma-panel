@@ -2,11 +2,9 @@
   "animateLoading": true,
   "autoGenerateForm": true,
   "backgroundColor": "#fff",
-  "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "0",
-  "bottomRow": 89,
-  "bottomRowBeforeCollapse": 89,
+  "borderWidth": "",
+  "bottomRow": 58,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -95,16 +93,16 @@
       "key": "sourceData"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "schema.__root_schema__.borderRadius"
     },
     {
       "key": "schema.__root_schema__.cellBorderRadius"
     },
     {
-      "key": "title"
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
     },
     {
       "key": "submitButtonStyles.buttonColor"
@@ -113,16 +111,10 @@
       "key": "submitButtonStyles.borderRadius"
     },
     {
-      "key": "resetButtonStyles.borderRadius"
-    },
-    {
       "key": "resetButtonStyles.buttonColor"
     },
     {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
+      "key": "resetButtonStyles.borderRadius"
     },
     {
       "key": "schema.__root_schema__.children.accountname.defaultValue"
@@ -161,13 +153,13 @@
       "key": "schema.__root_schema__.children.imie.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.kontakttelefonstary.defaultValue"
+      "key": "schema.__root_schema__.children.miejscowosc.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.children.kontakttelefonstary.borderRadius"
+      "key": "schema.__root_schema__.children.miejscowosc.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.kontakttelefonstary.accentColor"
+      "key": "schema.__root_schema__.children.miejscowosc.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.nazwiskoklient.defaultValue"
@@ -212,9 +204,6 @@
       "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "borderRadius"
     },
     {
@@ -231,17 +220,15 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
-  "isVisible": "{{!!data_table.selectedRow.accountid}}",
+  "isVisible": "true",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 39,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
-  "originalTopRow": 0,
+  "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
   "parentColumnSpace": 16.3125,
-  "parentId": "0",
+  "parentId": "9rhv3ioohq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetButtonLabel": "Reset",
@@ -261,13 +248,13 @@
       "cellBoxShadow": "none",
       "children": {
         "accountname": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "accountname",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.accountname))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.accountname))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "accountname",
@@ -283,13 +270,13 @@
           "sourceData": "[value-3]"
         },
         "email1": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "email1",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.email1))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.email1))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "email1",
@@ -305,13 +292,13 @@
           "sourceData": "[value-11]"
         },
         "imie": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "imie",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.imie))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.imie))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "imie",
@@ -327,13 +314,13 @@
           "sourceData": "[value-42]"
         },
         "kod": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "kod",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kod))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kod))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "kod",
@@ -347,36 +334,36 @@
           "originalIdentifier": "kod",
           "position": 8
         },
-        "kontakttelefonstary": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "kontakttelefonstary",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+        "miejscowosc": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "miejscowosc",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kontakttelefonstary))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.miejscowosc))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
-          "identifier": "kontakttelefonstary",
+          "identifier": "miejscowosc",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Kontakttelefonstary",
+          "label": "Miejscowosc",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "kontakttelefonstary",
+          "originalIdentifier": "miejscowosc",
           "position": 4,
           "sourceData": "[value-43]"
         },
         "nazwiskoklient": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "nazwiskoklient",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.nazwiskoklient))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.nazwiskoklient))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "nazwiskoklient",
@@ -392,13 +379,13 @@
           "sourceData": "[value-44]"
         },
         "numer": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "numer",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.numer))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.numer))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "numer",
@@ -413,13 +400,13 @@
           "position": 7
         },
         "phone": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "phone",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.phone))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.phone))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "phone",
@@ -435,13 +422,13 @@
           "sourceData": "[value-9]"
         },
         "ulica": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "ulica",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ulica))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ulica))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "ulica",
@@ -457,7 +444,7 @@
         }
       },
       "dataType": "object",
-      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
       "fieldType": "Object",
       "identifier": "__root_schema__",
       "isCustomField": false,
@@ -478,19 +465,18 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"accountid\")}}",
-  "submitButtonLabel": "Update",
+  "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"accountid\")}}",
+  "submitButtonLabel": "Submit",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Update Row accountid: {{data_table.selectedRow.accountid}}",
+  "title": "Insert Row",
   "topRow": 0,
-  "topRowBeforeCollapse": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
-  "widgetId": "6g4ewsx2v0",
-  "widgetName": "update_form"
+  "widgetId": "w10l8merz2",
+  "widgetName": "insert_form"
 }
