@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_dc976702-7106-4d22-a2be-a463cbddd423",
-  "id": "Klienci2_Query1",
+  "gitSyncId": "66db510001b5f41415619b59_3d159434-33b9-45d0-beb4-73421dbfb1ec",
+  "id": "Oferty_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM klienci LIMIT 10;",
+      "body": "DELETE FROM oferty\n  WHERE id_oferta = {{data_table.triggeredRow.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,8 +23,8 @@
       "pluginId": "mysql-plugin"
     },
     "executeOnLoad": false,
-    "name": "Query1",
-    "pageId": "Klienci2",
+    "name": "DeleteQuery",
+    "pageId": "Oferty",
     "userSetOnLoad": false
   }
 }

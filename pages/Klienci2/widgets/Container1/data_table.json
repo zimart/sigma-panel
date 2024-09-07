@@ -41,8 +41,9 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1725695189760,
+  "columnUpdatedAt": 1725713512508,
   "defaultPageSize": 0,
+  "defaultSearchText": "",
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
   "derivedColumns": {
@@ -156,6 +157,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -280,6 +284,7 @@
       "label": "Akcja",
       "labelColor": "#FFFFFF",
       "notation": "standard",
+      "onClick": "{{storeValue('id_klienta', data_table.selectedRow.accountid).then(() => {\n  showAlert('zapisano id', '');\n});\nnavigateTo('Oferty', {\n  id_klienta: appsmith.store.id_klienta\n}, 'SAME_WINDOW');}}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",

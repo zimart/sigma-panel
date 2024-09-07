@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_0c762336-2d58-479a-a4aa-791c4e404768",
-  "id": "Klienci2_SelectQuery",
+  "gitSyncId": "66db510001b5f41415619b59_58b9d3bc-1aea-4647-9234-ec39dec9e19e",
+  "id": "Oferty_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM klienci\nWHERE nazwiskoklient like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'accountid'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM oferty\nWHERE klient like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'id_oferta'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Klienci2",
+    "pageId": "Oferty",
     "userSetOnLoad": true
   }
 }

@@ -33,6 +33,10 @@
     {
       "id": "Klienci2",
       "isDefault": false
+    },
+    {
+      "id": "Oferty",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
