@@ -87,16 +87,70 @@
   "displayName": "JSON Form",
   "dynamicBindingPathList": [
     {
-      "key": "schema.__root_schema__.defaultValue"
-    },
-    {
       "key": "sourceData"
     },
     {
-      "key": "schema.__root_schema__.borderRadius"
+      "key": "schema.__root_schema__.children.klient.defaultValue"
     },
     {
-      "key": "schema.__root_schema__.cellBorderRadius"
+      "key": "schema.__root_schema__.children.klient.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.klient.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.numeroferty.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.numeroferty.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.numeroferty.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.kategoria.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.kategoria.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.nieiwme.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.nieiwme.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.id_klient.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.id_klient.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.fk_klienci_oferty_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.fk_klienci_oferty_id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.fk_klienci_oferty_id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.dataoferty.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.dataoferty.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.dataoferty.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.temat.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.temat.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.temat.borderRadius"
     },
     {
       "key": "borderRadius"
@@ -105,67 +159,7 @@
       "key": "boxShadow"
     },
     {
-      "key": "submitButtonStyles.buttonColor"
-    },
-    {
-      "key": "submitButtonStyles.borderRadius"
-    },
-    {
-      "key": "resetButtonStyles.buttonColor"
-    },
-    {
-      "key": "resetButtonStyles.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.klient.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.klient.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.numeroferty.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.numeroferty.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.numeroferty.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.kategoria.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.kategoria.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.kategoria.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.nieiwme.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.nieiwme.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.nieiwme.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.id_klient.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.id_klient.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.fk_klienci_oferty_id.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.fk_klienci_oferty_id.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.fk_klienci_oferty_id.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.klient.defaultValue"
+      "key": "schema.__root_schema__.children.kategoria.options"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -183,6 +177,15 @@
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.nieiwme.onTextChanged"
+    },
+    {
+      "key": "schema.__root_schema__.children.numeroferty.onTextChanged"
+    },
+    {
+      "key": "schema.__root_schema__.children.kategoria.onOptionChange"
     }
   ],
   "fieldLimitExceeded": false,
@@ -196,7 +199,7 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{InsertQuery.run(\n\t() => SelectQuery.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
+  "onSubmit": "{{InsertQuery.run(\n\t() => tabela_id_klient.run()\n\t\t\t\t\t.then(() => closeModal('Insert_Modal')), \n\t(error) => showAlert(`Error while inserting resource!\\n ${error}`,'error'))\n}}",
   "parentColumnSpace": 16.3125,
   "parentId": "9rhv3ioohq",
   "parentRowSpace": 10,
@@ -208,7 +211,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
   },
-  "rightColumn": 64,
+  "rightColumn": 63,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -217,6 +220,28 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
+        "dataoferty": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "dataoferty",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (datepobierz.dzisiaj.data))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "dataoferty",
+          "isCustomField": false,
+          "isDisabled": true,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Dataoferty",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "dataoferty",
+          "position": 6,
+          "sourceData": ""
+        },
         "fk_klienci_oferty_id": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "fk_klienci_oferty_id",
@@ -229,7 +254,7 @@
           "iconAlign": "left",
           "identifier": "fk_klienci_oferty_id",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
@@ -253,7 +278,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Id Klient",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "id_klient",
@@ -266,19 +291,21 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kategoria))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "defaultValue": "",
+          "fieldType": "Select",
           "identifier": "kategoria",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
+          "isFilterable": false,
+          "isRequired": true,
           "isVisible": true,
           "label": "Kategoria",
           "labelTextSize": "0.875rem",
+          "onOptionChange": "{{storeValue('kategoriaoferty', insert_form.formData.temat);}}",
+          "options": "{{pobierzkategorie.data.map( (obj) =>{ return  {'label': obj.nazwakategorii, 'value': obj.nazwakategorii } })}}",
           "originalIdentifier": "kategoria",
-          "position": 2
+          "position": 1,
+          "serverSideFiltering": false
         },
         "klient": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -292,14 +319,14 @@
           "iconAlign": "left",
           "identifier": "klient",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Klient",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "klient",
-          "position": 0,
+          "position": 2,
           "sourceData": "[value-2]"
         },
         "nieiwme": {
@@ -309,19 +336,20 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.nieiwme))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "nieiwme",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Nieiwme",
+          "isVisible": false,
+          "label": "nirir",
           "labelTextSize": "0.875rem",
+          "onTextChanged": "{{pobierzid.run()}}",
           "originalIdentifier": "nieiwme",
-          "position": 3
+          "position": 7
         },
         "numeroferty": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -329,21 +357,44 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.numeroferty))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
-          "fieldType": "Number Input",
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (numeroferty.miesiac.data))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "numeroferty",
           "isCustomField": false,
-          "isDisabled": false,
+          "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Numeroferty",
           "labelTextSize": "0.875rem",
+          "onTextChanged": "{{pobierzid.run()}}",
           "originalIdentifier": "numeroferty",
-          "position": 1,
-          "sourceData": 0
+          "position": 3,
+          "sourceData": "OF/09/"
+        },
+        "temat": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "temat",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.temat))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "temat",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Temat",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "temat",
+          "position": 0,
+          "sourceData": ""
         }
       },
       "dataType": "object",
@@ -367,16 +418,16 @@
     }
   },
   "scrollContents": true,
-  "showReset": true,
+  "showReset": false,
   "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"id_oferta\")}}",
-  "submitButtonLabel": "Submit",
+  "submitButtonLabel": "Zapisz",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "PRIMARY"
   },
-  "title": "Insert Row",
+  "title": "",
   "topRow": 0,
   "type": "JSON_FORM_WIDGET",
   "version": 1,

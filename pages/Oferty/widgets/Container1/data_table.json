@@ -22,21 +22,23 @@
     }
   },
   "columnOrder": [
-    "id_oferta",
-    "klient",
-    "numeroferty",
+    "customColumn1",
+    "temat",
     "kategoria",
+    "id_oferta",
+    "numeroferty",
+    "dataoferty",
+    "klient",
     "nieiwme",
     "id_klient",
-    "fk_klienci_oferty_id",
-    "customColumn1"
+    "fk_klienci_oferty_id"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1725712383908,
+  "columnUpdatedAt": 1725792537531,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -68,22 +70,10 @@
   "displayName": "Table",
   "dynamicBindingPathList": [
     {
-      "key": "derivedColumns.customColumn1.buttonLabel"
+      "key": "tableData"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonLabel"
-    },
-    {
-      "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
+      "key": "primaryColumns.customColumn1.computedValue"
     },
     {
       "key": "primaryColumns.id_oferta.computedValue"
@@ -107,7 +97,19 @@
       "key": "primaryColumns.fk_klienci_oferty_id.computedValue"
     },
     {
-      "key": "tableData"
+      "key": "primaryColumns.dataoferty.computedValue"
+    },
+    {
+      "key": "primaryColumns.temat.computedValue"
+    },
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
     }
   ],
   "dynamicPropertyPathList": [
@@ -119,9 +121,6 @@
     }
   ],
   "dynamicTriggerPathList": [
-    {
-      "key": "primaryColumns.customColumn1.onClick"
-    },
     {
       "key": "onPageChange"
     },
@@ -157,27 +156,70 @@
   "primaryColumnId": "id_oferta",
   "primaryColumns": {
     "customColumn1": {
-      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-      "boxShadow": "none",
-      "buttonColor": "#DD4B34",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-      "buttonLabelColor": "#FFFFFF",
+      "alias": "lp.",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
       "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "button",
-      "computedValue": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentIndex+1))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "horizontalAlignment": "LEFT",
       "id": "customColumn1",
-      "index": 5,
+      "index": 9,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
       "isVisible": true,
-      "label": "Delete",
+      "label": "lp.",
       "labelColor": "#FFFFFF",
-      "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
-      "sticky": "right",
+      "notation": "standard",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "dataoferty": {
+      "alias": "dataoferty",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dataoferty\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "dataoferty",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "dataoferty",
+      "notation": "standard",
+      "originalId": "dataoferty",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
       "width": 150
     },
     "fk_klienci_oferty_id": {
@@ -202,7 +244,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "fk_klienci_oferty_id",
       "notation": "standard",
       "originalId": "fk_klienci_oferty_id",
@@ -236,7 +278,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "id_klient",
       "notation": "standard",
       "originalId": "id_klient",
@@ -270,7 +312,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "id_oferta",
       "notation": "standard",
       "originalId": "id_oferta",
@@ -287,8 +329,8 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kategoria\"]))}}",
+      "columnType": "select",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow.kategoria))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -338,7 +380,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "klient",
       "notation": "standard",
       "originalId": "klient",
@@ -372,7 +414,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "nieiwme",
       "notation": "standard",
       "originalId": "nieiwme",
@@ -410,6 +452,40 @@
       "label": "numeroferty",
       "notation": "standard",
       "originalId": "numeroferty",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "temat": {
+      "alias": "temat",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"temat\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "temat",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "temat",
+      "notation": "standard",
+      "originalId": "temat",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

@@ -2,7 +2,11 @@
   "borderRadius": "0px",
   "bottomRow": 5,
   "boxShadow": "none",
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
@@ -11,7 +15,7 @@
   ],
   "dynamicTriggerPathList": [],
   "fontFamily": "System Default",
-  "fontSize": "1.5rem",
+  "fontSize": "1.0rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": "true",
@@ -24,7 +28,7 @@
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "rightColumn": 55,
-  "text": "oferty Data",
+  "text": "Oferty klienta: {{zapytaj_klient.data[0].accountname}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

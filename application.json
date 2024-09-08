@@ -27,15 +27,27 @@
   "icon": "flight",
   "pages": [
     {
+      "id": "Authentication",
+      "isDefault": false
+    },
+    {
       "id": "Page1",
       "isDefault": true
     },
     {
-      "id": "Klienci2",
+      "id": "Klienci",
       "isDefault": false
     },
     {
       "id": "Oferty",
+      "isDefault": false
+    },
+    {
+      "id": "Kategorie_oferty",
+      "isDefault": false
+    },
+    {
+      "id": "User_auth",
       "isDefault": false
     }
   ],
