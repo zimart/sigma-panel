@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
   "bottomRow": 58,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "boxShadow": "none",
   "childStylesheet": {
     "ARRAY": {
       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -99,9 +99,6 @@
       "key": "schema.__root_schema__.children.klient.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.numeroferty.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.numeroferty.accentColor"
     },
     {
@@ -144,9 +141,6 @@
       "key": "schema.__root_schema__.children.dataoferty.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.temat.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.temat.accentColor"
     },
     {
@@ -156,10 +150,10 @@
       "key": "borderRadius"
     },
     {
-      "key": "boxShadow"
+      "key": "schema.__root_schema__.children.kategoria.options"
     },
     {
-      "key": "schema.__root_schema__.children.kategoria.options"
+      "key": "submitButtonStyles.buttonColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -185,7 +179,7 @@
       "key": "schema.__root_schema__.children.numeroferty.onTextChanged"
     },
     {
-      "key": "schema.__root_schema__.children.kategoria.onOptionChange"
+      "key": "schema.__root_schema__.children.temat.onTextChanged"
     }
   ],
   "fieldLimitExceeded": false,
@@ -297,11 +291,10 @@
           "isCustomField": false,
           "isDisabled": false,
           "isFilterable": false,
-          "isRequired": true,
+          "isRequired": false,
           "isVisible": true,
           "label": "Kategoria",
           "labelTextSize": "0.875rem",
-          "onOptionChange": "{{storeValue('kategoriaoferty', insert_form.formData.temat);}}",
           "options": "{{pobierzkategorie.data.map( (obj) =>{ return  {'label': obj.nazwakategorii, 'value': obj.nazwakategorii } })}}",
           "originalIdentifier": "kategoria",
           "position": 1,
@@ -322,7 +315,7 @@
           "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Klient",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "klient",
@@ -358,18 +351,18 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (numeroferty.miesiac.data))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "numeroferty",
           "isCustomField": false,
-          "isDisabled": true,
+          "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Numeroferty",
           "labelTextSize": "0.875rem",
-          "onTextChanged": "{{pobierzid.run()}}",
+          "onTextChanged": "{{numeroferty.miesiac();}}",
           "originalIdentifier": "numeroferty",
           "position": 3,
           "sourceData": "OF/09/"
@@ -381,17 +374,18 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.temat))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "temat",
           "isCustomField": false,
           "isDisabled": false,
-          "isRequired": false,
+          "isRequired": true,
           "isSpellCheck": false,
           "isVisible": true,
           "label": "Temat",
           "labelTextSize": "0.875rem",
+          "onTextChanged": "{{pobierzid.run();\nnumeroferty.miesiac();}}",
           "originalIdentifier": "temat",
           "position": 0,
           "sourceData": ""
@@ -422,10 +416,11 @@
   "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"id_oferta\")}}",
   "submitButtonLabel": "Zapisz",
   "submitButtonStyles": {
-    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "borderRadius": "0.375rem",
     "boxShadow": "none",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-    "buttonVariant": "PRIMARY"
+    "buttonVariant": "PRIMARY",
+    "placement": "CENTER"
   },
   "title": "",
   "topRow": 0,

@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_0c5e210a-f29e-47df-9eab-fc17c34b1eb7",
+  "gitSyncId": "66db510001b5f41415619b59_f9f19f5e-4fe9-4bad-854b-9c8cb75cb216",
   "id": "Oferty_numeroferty.miesiac",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -26,6 +26,6 @@
     "fullyQualifiedName": "numeroferty.miesiac",
     "name": "miesiac",
     "pageId": "Oferty",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

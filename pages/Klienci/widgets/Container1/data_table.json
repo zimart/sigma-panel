@@ -34,14 +34,15 @@
     "numer",
     "kod",
     "customColumn1",
-    "customColumn2"
+    "customColumn2",
+    "customColumn4"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1725792306337,
+  "columnUpdatedAt": 1725827894507,
   "defaultPageSize": 0,
   "defaultSearchText": "",
   "defaultSelectedRowIndex": "0",
@@ -138,6 +139,15 @@
     },
     {
       "key": "primaryColumns.customColumn3.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn4.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn4.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn4.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -163,6 +173,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn4.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -258,7 +271,7 @@
       "width": 150
     },
     "customColumn1": {
-      "alias": "Akcja",
+      "alias": "OFERTY",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
@@ -284,10 +297,10 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Akcja",
+      "label": "OFERTY",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{storeValue('id_klienta', data_table.triggeredRow.accountid).then(() => {\n  showAlert('zapisano id', '');\n});\nnavigateTo('Oferty', {\n  id_klienta: appsmith.store.id_klienta\n}, 'SAME_WINDOW');}}",
+      "onClick": "{{storeValue('id_klienta', data_table.triggeredRow.accountid).then(() => {});\nnavigateTo('Oferty', {\n  id_klienta: appsmith.store.id_klienta\n}, 'SAME_WINDOW');}}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
@@ -362,6 +375,46 @@
       "labelColor": "#FFFFFF",
       "notation": "standard",
       "originalId": "customColumn3",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn4": {
+      "alias": "KASUJ",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "KASUJ",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "buttonVariant": "SECONDARY",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn4",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "KASUJ",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{showModal(Delete_Modal.name);\nSelectQuery.run()}}",
+      "originalId": "customColumn4",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO oferty (\n\tklient,\n\ttemat,\n\tnumeroferty,\n\tkategoria,\n\tnieiwme,\n\tid_klient,\n\tfk_klienci_oferty_id,\n\tdataoferty)\nVALUES (\n\t'{{insert_form.formData.klient}}',\n\t'{{insert_form.formData.temat}}',\n\t'{{insert_form.formData.numeroferty}}',\n\t'{{insert_form.formData.kategoria}}',\n\t'{{insert_form.formData.nieiwme}}',\n\t'{{insert_form.formData.id_klient}}',\n\t'{{insert_form.formData.fk_klienci_oferty_id}}',\n\t'{{insert_form.formData.dataoferty}}');",
+      "body": "INSERT INTO oferty (\n\tklient,\n\ttemat,\n\tnumeroferty,\n\tkategoria,\n\tnieiwme,\n\tid_klient,\n\tfk_klienci_oferty_id,\n\tdataoferty)\nVALUES (\n\t'{{insert_form.formData.klient}}',\n\t'{{insert_form.formData.temat}}',\n\t'{{insert_form.formData.numeroferty}}',\n\t'{{insert_form.formData.kategoria}}',\n\t'{{insert_form.formData.nieiwme}}',\n\t'{{insert_form.formData.id_klient}}',\n\t'{{insert_form.formData.fk_klienci_oferty_id}}',\n\t'{{insert_form.formData.dataoferty}}');\n\t",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

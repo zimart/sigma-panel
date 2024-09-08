@@ -27,6 +27,6 @@
     "fullyQualifiedName": "numeroferty.myFun1",
     "name": "myFun1",
     "pageId": "Oferty",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

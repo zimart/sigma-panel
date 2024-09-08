@@ -243,11 +243,11 @@
   "isVisible": "{{!!data_table.selectedRow.accountid}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 48,
+  "leftColumn": 49,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 89,
+  "originalBottomRow": 34,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
@@ -378,7 +378,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "lp.",
           "position": 9,
-          "sourceData": 2
+          "sourceData": 3
         },
         "miejscowosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
