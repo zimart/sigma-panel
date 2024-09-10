@@ -1109,7 +1109,7 @@
   "rightColumn": 49,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{SelectQuery.data}}",
+  "tableData": "{{tabela_inventory_id.data}}",
   "textSize": "0.875rem",
   "topRow": 6,
   "totalRecordsCount": 0,

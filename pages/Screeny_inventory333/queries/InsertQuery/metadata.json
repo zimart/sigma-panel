@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_09b17d2c-10f5-406c-a486-4b16fa16a237",
-  "id": "Screeny_inventory_InsertQuery",
+  "gitSyncId": "66db510001b5f41415619b59_58185e84-5047-4b6c-8a0c-7257406d7caa",
+  "id": "Screeny_inventory333_InsertQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "InsertQuery",
-    "pageId": "Screeny_inventory",
+    "pageId": "Screeny_inventory333",
     "userSetOnLoad": false
   }
 }

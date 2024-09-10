@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_23c0e5e0-9f00-4d81-af6d-8058b34d72f4",
-  "id": "Screeny_inventory_DeleteQuery",
+  "gitSyncId": "66db510001b5f41415619b59_0b3cd913-8bdf-4c2b-8f04-00cd662625b2",
+  "id": "Screeny_inventory333_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "DeleteQuery",
-    "pageId": "Screeny_inventory",
+    "pageId": "Screeny_inventory333",
     "userSetOnLoad": false
   }
 }

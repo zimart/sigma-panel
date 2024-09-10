@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_2ae5e33a-894c-4dc7-8498-c5db584269aa",
-  "id": "Screeny_inventory_SelectQuery",
+  "gitSyncId": "66db510001b5f41415619b59_9d711cc7-e11c-489a-8876-29d5a224486b",
+  "id": "Screeny_inventory333_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": true,
     "name": "SelectQuery",
-    "pageId": "Screeny_inventory",
+    "pageId": "Screeny_inventory333",
     "userSetOnLoad": true
   }
 }

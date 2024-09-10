@@ -35,11 +35,11 @@
     },
     {
       "id": "Page1",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Klienci",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Oferty",
@@ -51,6 +51,10 @@
     },
     {
       "id": "User_auth",
+      "isDefault": false
+    },
+    {
+      "id": "Screeny_inventory333",
       "isDefault": false
     },
     {
