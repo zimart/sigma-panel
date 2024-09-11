@@ -13,8 +13,8 @@ export default {
 		return szerm;
   },
 	
-	 indekswys: function (wysokosc) {
-    var szerokoscm2 = appsmith.store.calkowita2;
+	 indekswys: function (wys) {
+    var szerokoscm2 = wysokosc_input.text;
 		 var szerm55
 		if (szerokoscm2 > 0 && szerokoscm2 <=1000) {var szerm55 = 1000;}	
 		else if (szerokoscm2 > 1000 && szerokoscm2 <=1250) {var szerm55 = 1250 ;}

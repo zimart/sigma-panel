@@ -18,6 +18,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
     }
   ],
   "iconAlign": "left",
@@ -42,7 +45,8 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onTextChanged": "{{wysokosccala.wys2();\nstoreValue('wysss2', wysokosc_input.text);\nindekswys.run()}}",
+  "onFocus": "",
+  "onTextChanged": "{{wysokosccala.wys2();\nstoreValue('nowacalkowita', wysokosc_input.text);\nindeksy.indeksszer();\nindekswys.run()}}",
   "parentColumnSpace": 20.21875,
   "parentId": "er5qa5lbjh",
   "parentRowSpace": 10,

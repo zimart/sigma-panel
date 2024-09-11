@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 75,
+  "bottomRow": 68,
   "boxShadow": "none",
-  "defaultText": "{{indekswys.data[0].indeks}}",
+  "defaultText": "{{Select8.selectedOptionValue}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -32,14 +32,14 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 21,
+  "leftColumn": 38,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 71,
-  "mobileLeftColumn": 21,
-  "mobileRightColumn": 41,
-  "mobileTopRow": 64,
+  "mobileBottomRow": 68,
+  "mobileLeftColumn": 38,
+  "mobileRightColumn": 58,
+  "mobileTopRow": 61,
   "needsErrorInfo": false,
   "parentColumnSpace": 20.53125,
   "parentId": "0",
@@ -47,12 +47,12 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 41,
+  "rightColumn": 58,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 68,
+  "topRow": 61,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "bwiuw34xd3",
-  "widgetName": "Input4"
+  "widgetId": "rbyvyvhp25",
+  "widgetName": "Input5"
 }
