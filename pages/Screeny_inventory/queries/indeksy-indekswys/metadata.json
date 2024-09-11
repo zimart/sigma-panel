@@ -26,7 +26,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "indeksy.indekswys",
     "name": "indekswys",
     "pageId": "Screeny_inventory",

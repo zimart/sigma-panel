@@ -1,5 +1,7 @@
 {
+  "borderColor": "#d4d4d8",
   "borderRadius": "0px",
+  "borderWidth": "",
   "bottomRow": 10,
   "boxShadow": "none",
   "dynamicBindingPathList": [
@@ -16,7 +18,7 @@
   "dynamicTriggerPathList": [],
   "fontFamily": "System Default",
   "fontSize": "1.0rem",
-  "fontStyle": "BOLD",
+  "fontStyle": "",
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",

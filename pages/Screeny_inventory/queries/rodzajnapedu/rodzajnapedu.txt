@@ -1,0 +1,1 @@
+SELECT rodzaj FROM screeny_napedy WHERE seria={{naped_seria_select.selectedOptionValue}};

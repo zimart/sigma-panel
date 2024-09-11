@@ -1,0 +1,1 @@
+SELECT `indeks` FROM `screeny_tabelaindeksy` WHERE {{appsmith.store.wysss2}} <= szermax AND {{wyappsmith.store.wysss2}} > szermin;

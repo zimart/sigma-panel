@@ -1,6 +1,0 @@
-INSERT INTO screeny_system (
-	system,
-	linia)
-VALUES (
-	'{{insert_form.formData.system}}',
-	'{{insert_form.formData.linia}}');

@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 154,
+  "bottomRow": 173,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1200,
+      "bottomRow": 1390,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -55,7 +55,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 1200,
+      "bottomRow": 1390,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -99,7 +99,7 @@
       "widgetName": "Canvas6"
     }
   ],
-  "defaultTab": "Tab 1",
+  "defaultTab": "KALKULACJA",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -112,6 +112,7 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
@@ -126,7 +127,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 154,
+  "originalBottomRow": 173,
   "originalTopRow": 30,
   "parentColumnSpace": 20.21875,
   "parentId": "59rw5mx0bq",
@@ -141,7 +142,7 @@
       "id": "tab1",
       "index": 0,
       "isVisible": true,
-      "label": "Tab 1",
+      "label": "KALKULACJA",
       "positioning": "vertical",
       "widgetId": "o2y8szuai7"
     },
@@ -149,7 +150,7 @@
       "id": "tab2",
       "index": 1,
       "isVisible": true,
-      "label": "Tab 2",
+      "label": "PODSUMOWANIE",
       "positioning": "vertical",
       "widgetId": "w811u4s83s"
     }

@@ -1,4 +1,0 @@
-UPDATE screeny_system SET
-		system = '{{update_form.fieldState.system.isVisible ? update_form.formData.system : update_form.sourceData.system}}',
-		linia = '{{update_form.fieldState.linia.isVisible ? update_form.formData.linia : update_form.sourceData.linia}}'
-WHERE id = {{data_table.selectedRow.id}};

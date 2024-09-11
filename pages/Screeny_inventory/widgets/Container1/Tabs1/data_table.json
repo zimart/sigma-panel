@@ -1,10 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": false,
+  "animateLoading": true,
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "1px",
   "borderWidth": "1",
-  "bottomRow": 118,
+  "bottomRow": 129,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "button": {
@@ -60,7 +60,7 @@
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
-  "delimiter": ",",
+  "delimiter": ";",
   "derivedColumns": {
     "customColumn1": {
       "borderRadius": "0px",
@@ -223,8 +223,8 @@
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 118,
-  "originalTopRow": 29,
+  "originalBottomRow": 129,
+  "originalTopRow": 48,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -1112,7 +1112,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
-  "topRow": 29,
+  "topRow": 48,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",
