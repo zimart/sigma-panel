@@ -2,11 +2,7 @@
   "borderRadius": "0px",
   "bottomRow": 5,
   "boxShadow": "none",
-  "dynamicBindingPathList": [
-    {
-      "key": "text"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
@@ -28,7 +24,7 @@
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
   "rightColumn": 55,
-  "text": "screeny_inventory Data\n{{zapytaj_klient_inventory.data}}\n\n\n",
+  "text": "screeny_system Data",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

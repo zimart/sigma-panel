@@ -54,11 +54,15 @@
       "isDefault": false
     },
     {
-      "id": "Screeny_inventory333",
+      "id": "Screeny_inventory",
       "isDefault": false
     },
     {
-      "id": "Screeny_inventory",
+      "id": "Screeny_inventory334",
+      "isDefault": false
+    },
+    {
+      "id": "Screeny_system",
       "isDefault": false
     }
   ],
