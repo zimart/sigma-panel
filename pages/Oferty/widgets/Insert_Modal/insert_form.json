@@ -315,7 +315,7 @@
           "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Klient",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "klient",

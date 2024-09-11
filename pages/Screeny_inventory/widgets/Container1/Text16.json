@@ -1,13 +1,13 @@
 {
   "borderRadius": "0px",
-  "bottomRow": 5,
+  "bottomRow": 10,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
       "key": "text"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "fontSize"
@@ -15,7 +15,7 @@
   ],
   "dynamicTriggerPathList": [],
   "fontFamily": "System Default",
-  "fontSize": "1.5rem",
+  "fontSize": "1.0rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": "true",
@@ -23,12 +23,15 @@
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
+  "originalBottomRow": 10,
+  "originalTopRow": 1,
   "overflow": "NONE",
   "parentColumnSpace": 11.78515625,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "rightColumn": 55,
-  "text": "screeny_inventory Data\n{{zapytaj_klient_inventory.data}}\n\n\n",
+  "rightColumn": 10,
+  "shouldScrollContents": true,
+  "text": "Klient:\n{{zapytaj_klient_inv.data[0].klient}}\n\n\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

@@ -485,7 +485,7 @@
           "isDisabled": true,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "ID_OFERTA",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "fk_oferty_inventory_id",

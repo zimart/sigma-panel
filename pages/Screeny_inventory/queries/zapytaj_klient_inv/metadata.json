@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_8e6ace61-3348-4401-bbb2-6314b5305f9c",
-  "id": "Screeny_inventory334_DeleteQuery",
+  "gitSyncId": "66db510001b5f41415619b59_c4ad2f30-2823-4b20-9230-d15f99746426",
+  "id": "Screeny_inventory_zapytaj_klient_inv",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM screeny_inventory\n  WHERE id = {{data_table.triggeredRow.id}};",
+      "body": "SELECT klient FROM oferty where id_oferta = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,9 +22,14 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "executeOnLoad": false,
-    "name": "DeleteQuery",
-    "pageId": "Screeny_inventory334",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": true,
+    "name": "zapytaj_klient_inv",
+    "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }
 }
