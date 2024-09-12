@@ -46,7 +46,7 @@
   "mobileTopRow": 10,
   "needsErrorInfo": false,
   "onFocus": "",
-  "onTextChanged": "{{wysokosccala.wys2();\nstoreValue('nowacalkowita', wysokosc_input.text);\nindeksy.indeksszer();\nindekswys.run()}}",
+  "onTextChanged": "{{wysokosccala.wys2();\nstoreValue('nowacalkowita', wysokosc_input.text);\nindekswys.run();\nskrzynka_zapytaj.run();\nstoreValue('wybranaskrzynka', Select8.selectedOptionValue);}}",
   "parentColumnSpace": 20.21875,
   "parentId": "er5qa5lbjh",
   "parentRowSpace": 10,

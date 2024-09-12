@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 68,
+  "bottomRow": 74,
   "boxShadow": "none",
   "defaultText": "{{Select8.selectedOptionValue}}",
   "dynamicBindingPathList": [
@@ -50,7 +50,7 @@
   "rightColumn": 58,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 61,
+  "topRow": 67,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "rbyvyvhp25",

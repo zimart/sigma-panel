@@ -18,7 +18,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -41,6 +45,7 @@
   "mobileRightColumn": 43,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onTextChanged": "{{storeValue('dth', sku_input.text);}}",
   "parentColumnSpace": 19.89794921875,
   "parentId": "er5qa5lbjh",
   "parentRowSpace": 10,

@@ -60,6 +60,14 @@
     {
       "id": "Screeny_system2",
       "isDefault": false
+    },
+    {
+      "id": "Screeny_skrzynki",
+      "isDefault": false
+    },
+    {
+      "id": "Screeny_tkanina",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

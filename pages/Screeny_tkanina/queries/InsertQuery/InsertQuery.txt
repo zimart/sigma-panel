@@ -1,0 +1,4 @@
+INSERT INTO screeny_tkanina (
+	rodzaj_tkanina)
+VALUES (
+	'{{insert_form.formData.rodzaj_tkanina}}');

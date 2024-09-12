@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "1px",
   "borderWidth": "1",
-  "bottomRow": 129,
+  "bottomRow": 122,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "button": {
@@ -223,8 +223,8 @@
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 129,
-  "originalTopRow": 48,
+  "originalBottomRow": 122,
+  "originalTopRow": 41,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -1112,7 +1112,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
-  "topRow": 48,
+  "topRow": 41,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",

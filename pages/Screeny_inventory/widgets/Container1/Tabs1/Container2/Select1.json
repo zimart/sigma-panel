@@ -50,7 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{system_zapytaj.run();\nkolor_zapytaj.run()}}",
+  "onOptionChange": "{{system_zapytaj.run();\nkolor_zapytaj.run();\nstoreValue('liniazapisz', Select1.selectedOptionValue);\nstoreValue('sku_value4', sku_input.text);\ncena_zapytaj.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,
