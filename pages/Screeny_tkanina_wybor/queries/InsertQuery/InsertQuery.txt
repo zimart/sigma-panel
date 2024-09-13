@@ -1,0 +1,6 @@
+INSERT INTO screeny_tkanina_wybor (
+	tkanina_main,
+	tkanina)
+VALUES (
+	'{{insert_form.formData.tkanina_main}}',
+	'{{insert_form.formData.tkanina}}');

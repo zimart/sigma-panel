@@ -204,15 +204,6 @@
     },
     {
       "key": "schema.__root_schema__.children.kod.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.lp_.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.lp_.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.lp_.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -357,28 +348,6 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kod",
           "position": 7
-        },
-        "lp_": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "lp.",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "number",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData[\"lp.\"]))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Number Input",
-          "iconAlign": "left",
-          "identifier": "lp_",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Lp",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "lp.",
-          "position": 9,
-          "sourceData": 3
         },
         "miejscowosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

@@ -22,7 +22,6 @@
     }
   },
   "columnOrder": [
-    "customColumn3",
     "accountid",
     "accountname",
     "phone",
@@ -42,7 +41,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1725827894507,
+  "columnUpdatedAt": 1726162879184,
   "defaultPageSize": 0,
   "defaultSearchText": "",
   "defaultSelectedRowIndex": "0",
@@ -136,9 +135,6 @@
     },
     {
       "key": "primaryColumns.customColumn2.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn3.computedValue"
     },
     {
       "key": "primaryColumns.customColumn4.boxShadow"
@@ -342,39 +338,6 @@
       "notation": "standard",
       "onClick": "{{showModal(update_modal.name);}}",
       "originalId": "customColumn2",
-      "sticky": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "customColumn3": {
-      "alias": "lp.",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "text",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentIndex+1))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "customColumn3",
-      "index": 10,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "lp.",
-      "labelColor": "#FFFFFF",
-      "notation": "standard",
-      "originalId": "customColumn3",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,

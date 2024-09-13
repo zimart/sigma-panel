@@ -1,3 +1,0 @@
-UPDATE screeny_tkanina SET
-		rodzaj_tkanina = '{{update_form.fieldState.rodzaj_tkanina.isVisible ? update_form.formData.rodzaj_tkanina : update_form.sourceData.rodzaj_tkanina}}'
-WHERE id = {{data_table.selectedRow.id}};
