@@ -10,7 +10,8 @@ INSERT INTO screeny_inventory (
 	rabatsystem,
 	linia,
 	system,
-	fk_oferty_inventory_id
+	fk_oferty_inventory_id,
+	powierzchnia
 )
 VALUES (
 	'{{insert_form.formData.skugen}}',
@@ -24,5 +25,6 @@ VALUES (
 	'{{insert_form.formData.rabatsystem}}',
 	'{{insert_form.formData.linia}}',
 	'{{insert_form.formData.system}}',
-	'{{appsmith.URL.queryParams.oferta_id}}'
+	'{{appsmith.URL.queryParams.oferta_id}}',
+	'{{powierzchnia.text}}'
 );

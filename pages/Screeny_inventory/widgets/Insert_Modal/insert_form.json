@@ -331,6 +331,15 @@
     },
     {
       "key": "schema.__root_schema__.children.fk_oferty_inventory_id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.powierzchnia.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.powierzchnia.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.powierzchnia.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -623,6 +632,28 @@
           "originalIdentifier": "naped",
           "position": 16,
           "sourceData": "[value-18]"
+        },
+        "powierzchnia": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "powierzchnia",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.powierzchnia))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "powierzchnia",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Powierzchnia",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "powierzchnia",
+          "position": 24,
+          "sourceData": 0
         },
         "price_motor": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",

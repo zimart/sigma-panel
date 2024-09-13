@@ -1,2 +1,0 @@
-INSERT INTO screeny_tkanina_wybor (tkanina, tkanina_main)
-  VALUES ('{{data_table.triggeredRow.tkanina}}', '{{data_table.triggeredRow.tkanina_main}}');

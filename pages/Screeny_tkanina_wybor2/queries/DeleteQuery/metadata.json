@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_b8b5106c-664c-4e39-9d57-6eff2b49530d",
-  "id": "Screeny_tkanina_wybor_DeleteQuery",
+  "gitSyncId": "66db510001b5f41415619b59_e1e41572-bd92-414a-8042-9951b12b21d6",
+  "id": "Screeny_tkanina_wybor2_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -24,7 +24,7 @@
     },
     "executeOnLoad": false,
     "name": "DeleteQuery",
-    "pageId": "Screeny_tkanina_wybor",
+    "pageId": "Screeny_tkanina_wybor2",
     "userSetOnLoad": false
   }
 }

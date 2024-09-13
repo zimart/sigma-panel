@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_6857c3f3-6724-4a82-b958-8d15b27c2121",
-  "id": "Screeny_tkanina_wybor_kopiujwiersztkaniny",
+  "gitSyncId": "66db510001b5f41415619b59_0ec18676-f473-42d6-bf0a-f3bae1479b30",
+  "id": "Screeny_tkanina_wybor2_InsertQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO screeny_tkanina_wybor (tkanina, tkanina_main)\n  VALUES ('{{data_table.triggeredRow.tkanina}}', '{{data_table.triggeredRow.tkanina_main}}');",
+      "body": "INSERT INTO screeny_tkanina_wybor (\n\ttkanina,\n\ttkanina_main,\n\tdoplatam2)\nVALUES (\n\t'{{insert_form.formData.tkanina}}',\n\t'{{insert_form.formData.tkanina_main}}',\n\t'{{insert_form.formData.doplatam2}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": false,
-    "name": "kopiujwiersztkaniny",
-    "pageId": "Screeny_tkanina_wybor",
+    "name": "InsertQuery",
+    "pageId": "Screeny_tkanina_wybor2",
     "userSetOnLoad": false
   }
 }

@@ -4,13 +4,10 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "{{\n            {\n              label: Select1.options[0].label,\n              value: Select1.options[0].value\n            }\n          }}",
+  "defaultOptionValue": "PREMIUM",
   "dynamicBindingPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     },
     {
       "key": "accentColor"

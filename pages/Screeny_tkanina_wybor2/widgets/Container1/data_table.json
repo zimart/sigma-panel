@@ -25,7 +25,7 @@
     "id",
     "tkanina",
     "tkanina_main",
-    "customColumn1",
+    "doplatam2",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -33,7 +33,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1726256064430,
+  "columnUpdatedAt": 1726261614889,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -71,6 +71,9 @@
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
     {
+      "key": "primaryColumns.customColumn1.buttonLabel"
+    },
+    {
       "key": "accentColor"
     },
     {
@@ -78,6 +81,9 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
       "key": "primaryColumns.id.computedValue"
@@ -89,13 +95,7 @@
       "key": "primaryColumns.tkanina_main.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn1.boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.buttonColor"
+      "key": "primaryColumns.doplatam2.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -108,6 +108,9 @@
   ],
   "dynamicTriggerPathList": [
     {
+      "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
       "key": "onPageChange"
     },
     {
@@ -115,9 +118,6 @@
     },
     {
       "key": "onSort"
-    },
-    {
-      "key": "primaryColumns.customColumn1.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -145,38 +145,57 @@
   "primaryColumnId": "id",
   "primaryColumns": {
     "customColumn1": {
-      "alias": "customColumn1",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "kopiuj",
+      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+      "boxShadow": "none",
+      "buttonColor": "#DD4B34",
+      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
+      "buttonLabelColor": "#FFFFFF",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "button",
       "computedValue": "",
+      "enableFilter": true,
+      "enableSort": true,
+      "id": "customColumn1",
+      "index": 5,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Delete",
+      "labelColor": "#FFFFFF",
+      "menuColor": "#03B365",
+      "onClick": "{{showModal('Delete_Modal')}}",
+      "sticky": "right",
+      "width": 150
+    },
+    "doplatam2": {
+      "alias": "doplatam2",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"doplatam2\"]))}}",
       "currencyCode": "USD",
-      "customAlias": "",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "customColumn1",
-      "index": 6,
+      "id": "doplatam2",
+      "index": 3,
       "isCellEditable": false,
       "isCellVisible": true,
-      "isDerived": true,
+      "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "customColumn1",
-      "labelColor": "#FFFFFF",
+      "label": "doplatam2",
       "notation": "standard",
-      "onClick": "{{kopiujwiersztkaniny.run();\nSelectQuery.run()}}",
-      "originalId": "customColumn1",
+      "originalId": "doplatam2",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

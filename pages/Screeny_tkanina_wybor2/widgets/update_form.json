@@ -140,6 +140,15 @@
     },
     {
       "key": "schema.__root_schema__.children.tkanina_main.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.doplatam2.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.doplatam2.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.doplatam2.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -194,6 +203,28 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
+        "doplatam2": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "doplatam2",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "number",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.doplatam2))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Number Input",
+          "iconAlign": "left",
+          "identifier": "doplatam2",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Doplatam 2",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "doplatam2",
+          "position": 2,
+          "sourceData": 70
+        },
         "tkanina": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "tkanina",
@@ -214,7 +245,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "tkanina",
           "position": 0,
-          "sourceData": "001001 pear grey"
+          "sourceData": "S600 001001 pear grey"
         },
         "tkanina_main": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -236,7 +267,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "tkanina_main",
           "position": 1,
-          "sourceData": "COP"
+          "sourceData": "COPACO SERGE 600"
         }
       },
       "dataType": "object",
