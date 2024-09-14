@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO screeny_inventory (wysokosc, szerokosc, indexszer, indexwys, skugen, cena, doplatatkanina, doplatakolor, rabatsystem, linia, system, skrzynka, kolor, tkanina, wkladka, moc, naped, price_motor, rabatmotor, priceall, doplatawkladka, rodzajmotor, seq, fk_oferty_inventory_id, powierzchnia)\n  VALUES ('{{wysokosc_input.text}}', '{{szerokosc_input.text}}', {{index_szer_input.text}},{{index_wys_input.text}}, '{{sku_input.text}}', '{{cena_systemu.text}}', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 1, '', 1, '{{appsmith.URL.queryParams.id_oferta}}', '{{powierzchnia.text}}');",
+      "body": "INSERT INTO screeny_inventory (wysokosc, szerokosc, indexszer, indexwys, skugen, cena, doplatatkanina, doplatakolor, rabatsystem, linia, system, skrzynka, kolor, tkanina, wkladka, moc, naped, price_motor, rabatmotor, priceall, doplatawkladka, rodzajmotor, seq, fk_oferty_inventory_id, powierzchnia)\n  VALUES ('{{wysokosc_input.text}}',\n\t\t\t\t\t'{{szerokosc_input.text}}', \n\t\t\t\t\t{{index_szer_input.text}},\n\t\t\t\t\t{{index_wys_input.text}}, \n\t\t\t\t\t'{{sku_input.text}}', \n\t\t\t\t\t'{{cena_systemu.text}}',\n\t\t\t\t\t'', '', '', '', '', '{{Select8.selectedOptionValue}}', '', '', '', '', '', '', '', '', 1, '', 1, '{{appsmith.URL.queryParams.id_oferta}}', '{{powierzchnia.text}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -1,1 +1,1 @@
-SELECT kolorm FROM screeny_kolor where linia={{Select1.selectedOptionValue}}
+SELECT kolorm FROM screeny_kolor where system = {{system_select.selectedOptionLabel}}

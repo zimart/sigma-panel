@@ -275,8 +275,7 @@
           "label": "Seq",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "seq",
-          "position": 2,
-          "sourceData": null
+          "position": 2
         },
         "system": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",

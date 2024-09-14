@@ -33,7 +33,7 @@
   "parentRowSpace": 10,
   "rightColumn": 10,
   "shouldScrollContents": true,
-  "text": "Klient:\n{{zapytaj_klient_inv.data[0].klient}}\n\n\n",
+  "text": "Klient:\n{{zapytaj_klient_inv.data[0].klient ||\"\"}}\n\n\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,

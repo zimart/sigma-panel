@@ -1,2 +1,2 @@
 SELECT system,valueindeks FROM screeny_system where linia = {{Select1.selectedOptionLabel}} 
-ORDER BY seq DESC;
+ORDER BY seq ASC;

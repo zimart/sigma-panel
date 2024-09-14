@@ -1,0 +1,1 @@
+SELECT EXISTS (SELECT * FROM screeny_cennik where indeks={{sku_input.text}});

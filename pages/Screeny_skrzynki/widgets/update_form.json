@@ -5,7 +5,7 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 88,
+  "bottomRow": 70,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -185,9 +185,15 @@
     },
     {
       "key": "schema.__root_schema__.children.skrzynkaliczba.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.systemskrzynka.options"
+    },
+    {
+      "key": "schema.__root_schema__.children.liniaskrzynka.options"
     }
   ],
-  "dynamicHeight": "FIXED",
+  "dynamicHeight": "AUTO_HEIGHT",
   "dynamicPropertyPathList": [
     {
       "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
@@ -208,17 +214,19 @@
     }
   ],
   "fieldLimitExceeded": false,
-  "fixedFooter": true,
+  "fixedFooter": false,
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
   "isVisible": "{{!!data_table.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 46,
+  "leftColumn": 50,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+  "originalBottomRow": 190,
+  "originalTopRow": 101,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -247,18 +255,19 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.liniaskrzynka))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "liniaskrzynka",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Liniaskrzynka",
           "labelTextSize": "0.875rem",
+          "options": "{{POBIERZLINIE.data.map( (obj) =>{ return  {'label': obj.linia, 'value': obj.linia } })}}",
           "originalIdentifier": "liniaskrzynka",
           "position": 4,
+          "serverSideFiltering": false,
           "sourceData": "PREMIUM"
         },
         "maxheight": {
@@ -335,18 +344,19 @@
           "children": {},
           "dataType": "string",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.systemskrzynka))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Select",
           "identifier": "systemskrzynka",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Systemskrzynka",
           "labelTextSize": "0.875rem",
+          "options": "{{POBIERZSYSTEMY.data.map( (obj) =>{ return  {'label': obj.SYSTEM, 'value': obj.SYSTEM } })}}",
           "originalIdentifier": "systemskrzynka",
           "position": 5,
+          "serverSideFiltering": false,
           "sourceData": "ZIIIP"
         },
         "wymiar": {
@@ -415,7 +425,8 @@
     }
   },
   "scrollContents": true,
-  "showReset": true,
+  "shouldScrollContents": true,
+  "showReset": false,
   "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id\")}}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {

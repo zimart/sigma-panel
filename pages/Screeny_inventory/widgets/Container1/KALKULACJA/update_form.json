@@ -5,8 +5,8 @@
   "borderColor": "#2E3D4955",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 130,
-  "bottomRowBeforeCollapse": 130,
+  "bottomRow": 190,
+  "bottomRowBeforeCollapse": 190,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "ARRAY": {
@@ -345,6 +345,15 @@
     },
     {
       "key": "schema.__root_schema__.children.powierzchnia.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.ilosc.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.ilosc.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.ilosc.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -375,12 +384,12 @@
   "isVisible": "{{!!data_table.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 49,
+  "leftColumn": 47,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => tabela_inventory_id.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
-  "originalBottomRow": 130,
-  "originalTopRow": 41,
+  "originalBottomRow": 199,
+  "originalTopRow": 110,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -392,7 +401,7 @@
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "buttonVariant": "SECONDARY"
   },
-  "rightColumn": 64,
+  "rightColumn": 62,
   "schema": {
     "__root_schema__": {
       "accessor": "__root_schema__",
@@ -510,6 +519,27 @@
           "originalIdentifier": "fk_oferty_inventory_id",
           "position": 23,
           "sourceData": "[value-25]"
+        },
+        "ilosc": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "ilosc",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.ilosc))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "ilosc",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Ilosc",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "ilosc",
+          "position": 25
         },
         "indexszer": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -983,8 +1013,8 @@
     "buttonVariant": "PRIMARY"
   },
   "title": "Update Row id: {{data_table.selectedRow.id}}",
-  "topRow": 41,
-  "topRowBeforeCollapse": 41,
+  "topRow": 101,
+  "topRowBeforeCollapse": 101,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "6g4ewsx2v0",

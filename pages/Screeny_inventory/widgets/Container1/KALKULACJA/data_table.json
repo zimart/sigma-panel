@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "1px",
   "borderWidth": "1",
-  "bottomRow": 128,
+  "bottomRow": 188,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "button": {
@@ -50,6 +50,7 @@
     "seq",
     "fk_oferty_inventory_id",
     "powierzchnia",
+    "ilosc",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -57,7 +58,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1726261663263,
+  "columnUpdatedAt": 1726263525129,
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
@@ -181,6 +182,9 @@
     },
     {
       "key": "primaryColumns.powierzchnia.computedValue"
+    },
+    {
+      "key": "primaryColumns.ilosc.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -228,8 +232,8 @@
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 128,
-  "originalTopRow": 41,
+  "originalBottomRow": 197,
+  "originalTopRow": 110,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -457,6 +461,40 @@
       "label": "id",
       "notation": "standard",
       "originalId": "id",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "ilosc": {
+      "alias": "ilosc",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ilosc\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "ilosc",
+      "index": 26,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "ilosc",
+      "notation": "standard",
+      "originalId": "ilosc",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1147,12 +1185,12 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 49,
+  "rightColumn": 46,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
-  "topRow": 41,
+  "topRow": 101,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "DEFAULT",

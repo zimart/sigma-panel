@@ -72,6 +72,14 @@
     {
       "id": "Screeny_tkanina_wybor2",
       "isDefault": false
+    },
+    {
+      "id": "Screeny_kolor",
+      "isDefault": false
+    },
+    {
+      "id": "Screeny_kolor2",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

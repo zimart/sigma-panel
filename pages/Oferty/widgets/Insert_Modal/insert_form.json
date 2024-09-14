@@ -359,7 +359,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": false,
+          "isVisible": true,
           "label": "Numeroferty",
           "labelTextSize": "0.875rem",
           "onTextChanged": "{{numeroferty.miesiac();}}",

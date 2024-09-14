@@ -1,0 +1,70 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
+    }
+  ],
+  "errorMessage": "błędna wartosc",
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "ebj3l9h399",
+  "label": "PODAWANA WYSOKOŚĆ*",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 14,
+  "maxDynamicHeight": 9000,
+  "maxNum": "5000",
+  "minDynamicHeight": 4,
+  "minNum": "800",
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onFocus": "",
+  "onTextChanged": "{{wysokosccala.wys2();\nstoreValue('nowacalkowita', wysokosc_input.text);\nindekswys.run();\nskrzynka_zapytaj.run();\nstoreValue('wybranaskrzynka', Select8.selectedOptionValue);}}",
+  "originalBottomRow": 41,
+  "originalTopRow": 36,
+  "parentColumnSpace": 20.21875,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 21,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 0,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "jmdkg0qk5r",
+  "widgetName": "podawana_wysokosc_input"
+}

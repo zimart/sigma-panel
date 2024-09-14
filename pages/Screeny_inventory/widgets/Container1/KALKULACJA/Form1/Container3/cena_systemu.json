@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "bottomRowBeforeCollapse": 23,
+  "boxShadow": "none",
+  "defaultText": "{{cena_zapytaj.data[0].cenakatalogowa}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "iyb187w358",
+  "label": "cena systemu",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 50,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 60,
+  "mobileTopRow": 11,
+  "needsErrorInfo": false,
+  "originalBottomRow": 31,
+  "originalTopRow": 24,
+  "parentColumnSpace": 19.59375,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 59,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 0,
+  "topRowBeforeCollapse": 16,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "dhobdk2smf",
+  "widgetName": "cena_systemu"
+}

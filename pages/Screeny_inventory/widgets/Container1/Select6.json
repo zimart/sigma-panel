@@ -48,7 +48,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 14,
+  "rightColumn": 17,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"PLN\",\n    \"code\": \"PLN\"\n  },\n  {\n    \"name\": \"EUR\",\n    \"code\": \"EUR\"\n  }  \n]",
   "topRow": 0,
