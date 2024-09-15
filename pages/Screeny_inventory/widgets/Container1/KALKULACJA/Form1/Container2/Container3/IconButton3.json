@@ -1,0 +1,60 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "plus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{Select8.selectedOptionLabel.length > 1; szerokosc_input.text > 0; podawana_wysokosc_input.text > 0 }}",
+  "key": "sc24l1mhlp",
+  "leftColumn": 29,
+  "minWidth": 50,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "onClick": "{{\nremoveValue('sku_value');\nremoveValue('potrzebnamoc');\nclearStore();\nstoreValue('sku_value', tymczasowy.text);\n{{danesku.run()\n.then(() => cena_zapytaj.run())\n\t\t.then(() => napedwybrany.run())\n\t\t.then(() => showAlert('done'))\n\n}};\n}}",
+  "originalBottomRow": 7,
+  "originalTopRow": 3,
+  "parentColumnSpace": 18.6884765625,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 33,
+  "topRow": 3,
+  "topRowBeforeCollapse": 3,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "9flzflwhoy",
+  "widgetName": "IconButton3"
+}

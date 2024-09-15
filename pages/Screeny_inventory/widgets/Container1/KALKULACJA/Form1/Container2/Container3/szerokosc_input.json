@@ -18,14 +18,16 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
+    },
+    {
+      "key": "onFocus"
     }
   ],
   "errorMessage": "WPISZ WYMIAR > 800",
@@ -53,7 +55,9 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onTextChanged": "{{resetWidget(\"cena_systemu\", false);\nindeksszer.run();\nremoveValue('sku_value');\nskrzynka_zapytaj.run();\ndanesku.run();\nresetWidget(\"tymczasowy\", true);\nclearStore()}}",
+  "onBlur": "",
+  "onFocus": "",
+  "onTextChanged": "{{skrzynka_zapytaj.run();\nindeksszer.run();}}",
   "originalBottomRow": 41,
   "originalTopRow": 36,
   "parentColumnSpace": 19.59375,

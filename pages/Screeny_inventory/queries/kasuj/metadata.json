@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_f1dd858d-958d-423c-a9c9-744500e044a2",
-  "id": "Screeny_inventory_napedwybrany",
+  "gitSyncId": "66db510001b5f41415619b59_915edcc4-6db8-4a1d-b236-dda5ad2dd975",
+  "id": "Screeny_inventory_kasuj",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM screeny_napedy where moc >={{wymaganamocnaped.text}} and seria = {{naped_seria_select.selectedOptionLabel}} and rodzaj = {{rodzaj_nap.selectedOptionLabel}} ORDER BY moc ASC LIMIT 1;",
+      "body": "DELETE FROM screeny_inventory;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,13 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "executeOnLoad": true,
-    "name": "napedwybrany",
+    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "name": "kasuj",
     "pageId": "Screeny_inventory",
     "userSetOnLoad": false
   }

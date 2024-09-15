@@ -36,7 +36,7 @@
   "mobileRightColumn": 29,
   "mobileTopRow": 29,
   "needsErrorInfo": false,
-  "onClick": "{{\nclearStore();\n{{danesku2.run()\n.then(() => cena_zapytaj.run())\n\t\t.then(() => napedwybrany.run())\n\t\t.then(() => showAlert('done'))\n }};\n }}\n\n ",
+  "onClick": "{{\nclearStore();\n\n{{danesku.run()\n.then(() => cena_zapytaj.run())\n\t\t.then(() => napedwybrany.run())\n\t\t.then(() => showAlert('done'))\n }};\n }}\n\n ",
   "originalBottomRow": 33,
   "originalTopRow": 29,
   "parentColumnSpace": 19.3134765625,

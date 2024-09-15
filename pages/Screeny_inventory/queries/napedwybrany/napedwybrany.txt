@@ -1,1 +1,1 @@
-SELECT * FROM screeny_napedy where moc >= {{appsmith.store.potrzebnamoc}} and rodzaj = {{rodzaj_nap.selectedOptionLabel}} AND seria = {{naped_seria_select.selectedOptionLabel}} ORDER BY 'moc' ASC LIMIT 1;
+SELECT * FROM screeny_napedy where moc >={{wymaganamocnaped.text}} and seria = {{naped_seria_select.selectedOptionLabel}} and rodzaj = {{rodzaj_nap.selectedOptionLabel}} ORDER BY moc ASC LIMIT 1;
