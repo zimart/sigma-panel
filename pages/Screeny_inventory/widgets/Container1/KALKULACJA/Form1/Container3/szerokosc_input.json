@@ -48,7 +48,7 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onTextChanged": "{{indeksy.indeksszer();\nskrzynka_zapytaj.run();\nstoreValue('sku_value_1', sku_input.text);\ncena_zapytaj.run();}}",
+  "onTextChanged": "{{indeksy.indeksszer();\nskrzynka_zapytaj.run();\nstoreValue('sku_value_1', sku_input.text);\ncena_zapytaj.run()}}",
   "originalBottomRow": 41,
   "originalTopRow": 36,
   "parentColumnSpace": 19.59375,

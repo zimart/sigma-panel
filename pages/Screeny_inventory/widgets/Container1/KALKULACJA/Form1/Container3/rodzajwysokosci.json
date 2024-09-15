@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "1",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -44,7 +44,7 @@
   "mobileRightColumn": 6,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{wysokosccala.wys2();\nstoreValue('nowacalkowita', wysokosc_input.text);\nindekswys.run();\nskrzynka_zapytaj.run()}}",
+  "onOptionChange": "{{wysokosccala.wys2();\nstoreValue('nowacalkowita', wysokosc_input.text);\nindekswys.run();\nskrzynka_zapytaj.run();\nstoreValue('sku_value', sku_input.text);\ncena_zapytaj.run()}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 7,

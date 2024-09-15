@@ -10,6 +10,7 @@ export default {
 		else if (szerokoscm > 2000 && szerokoscm <=2250) {var szerm = 2250 ;}
 		else if (szerokoscm > 2250 && szerokoscm <=2500) {var szerm = 2500 ;}
 		else if (szerokoscm > 2500 && szerokoscm <=2750) {var szerm = 2750 ;}
+				else if (szerokoscm > 2750 && szerokoscm <=3000) {var szerm = 3000 ;}
 		return szerm;
   },
 	

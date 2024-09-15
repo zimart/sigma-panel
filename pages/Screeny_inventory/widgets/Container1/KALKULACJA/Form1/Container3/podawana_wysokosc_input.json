@@ -24,7 +24,7 @@
       "key": "onFocus"
     }
   ],
-  "errorMessage": "błędna wartosc",
+  "errorMessage": "błędna wartosc -mnimum 800",
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -50,7 +50,7 @@
   "mobileTopRow": 10,
   "needsErrorInfo": false,
   "onFocus": "",
-  "onTextChanged": "{{wysokosccala.wys2();\nstoreValue('nowacalkowita', wysokosc_input.text);\nindekswys.run();\nskrzynka_zapytaj.run();\nstoreValue('wybranaskrzynka', Select8.selectedOptionValue);}}",
+  "onTextChanged": "{{wysokosccala.wys2();\nstoreValue('nowacalkowita', wysokosc_input.text);\nindekswys.run();\nskrzynka_zapytaj.run();\nstoreValue('wybranaskrzynka', Select8.selectedOptionValue);\ncena_zapytaj.run()}}",
   "originalBottomRow": 41,
   "originalTopRow": 36,
   "parentColumnSpace": 20.21875,
