@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 33,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "1htpwy9uko",
+  "leftColumn": 13,
+  "minWidth": 120,
+  "mobileBottomRow": 33,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 29,
+  "mobileTopRow": 29,
+  "needsErrorInfo": false,
+  "onClick": "{{\nclearStore();\n{{danesku2.run()\n.then(() => cena_zapytaj.run())\n\t\t.then(() => napedwybrany.run())\n\t\t.then(() => showAlert('done'))\n }};\n }}\n\n ",
+  "originalBottomRow": 33,
+  "originalTopRow": 29,
+  "parentColumnSpace": 19.3134765625,
+  "parentId": "8jwyu0isum",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 29,
+  "text": "Submit",
+  "topRow": 29,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "1xkib0c9zi",
+  "widgetName": "Button5"
+}

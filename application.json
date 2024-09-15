@@ -82,7 +82,15 @@
       "isDefault": false
     },
     {
-      "id": "Screeny_inventory2",
+      "id": "Screeny_napedy",
+      "isDefault": false
+    },
+    {
+      "id": "Screeny_cennik",
+      "isDefault": false
+    },
+    {
+      "id": "Screeny_tabelaindeksy",
       "isDefault": false
     }
   ],

@@ -22,7 +22,11 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -34,7 +38,7 @@
   "labelText": "Kolor",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 16,
+  "leftColumn": 11,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -43,6 +47,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 173,
   "needsErrorInfo": false,
+  "onOptionChange": "{{doplatakolorzapytaj.run();\ncena_zapytaj.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 180,
@@ -52,7 +57,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 26,
+  "rightColumn": 21,
   "serverSideFiltering": false,
   "sourceData": "{{kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 0,

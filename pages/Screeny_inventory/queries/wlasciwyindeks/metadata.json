@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT EXISTS (SELECT * FROM screeny_cennik where indeks={{sku_input.text}});",
+      "body": "SELECT indeks FROM screeny_cennik where indeks = {{appsmith.store.sku_value}} ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -30,6 +30,6 @@
     "executeOnLoad": false,
     "name": "wlasciwyindeks",
     "pageId": "Screeny_inventory",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

@@ -1,0 +1,47 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "buttonColor": "#dd4b34",
+  "buttonVariant": "SECONDARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "refresh",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "ijm0p29mqt",
+  "leftColumn": 28,
+  "minWidth": 50,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 59,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "onClick": "{{removeValue('sku_value');\nremoveValue('potrzebnamoc');\nclearStore();\nstoreValue('sku_value', tymczasowy.text);\ndanesku.run();\nstoreValue('potrzebnamoc', wymaganamocnaped.text);\ncena_zapytaj.run();\nnapedwybrany.run();\n}}",
+  "parentColumnSpace": 19.0009765625,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 30,
+  "topRow": 2,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "zos7582zjp",
+  "widgetName": "IconButton1"
+}

@@ -30,6 +30,6 @@
     "executeOnLoad": false,
     "name": "indeksszer",
     "pageId": "Screeny_inventory",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

@@ -3,16 +3,19 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "bottomRow": 39,
   "bottomRowBeforeCollapse": 30,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{indekswys.data[0].indeks}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -21,7 +24,7 @@
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "k0srx2q35d",
   "label": "indeks_wys",
@@ -39,8 +42,8 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 26,
   "needsErrorInfo": false,
-  "originalBottomRow": 43,
-  "originalTopRow": 36,
+  "originalBottomRow": 39,
+  "originalTopRow": 32,
   "parentColumnSpace": 19.59375,
   "parentId": "8jwyu0isum",
   "parentRowSpace": 10,
@@ -50,7 +53,7 @@
   "rightColumn": 38,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 36,
+  "topRow": 32,
   "topRowBeforeCollapse": 23,
   "type": "INPUT_WIDGET_V2",
   "version": 2,

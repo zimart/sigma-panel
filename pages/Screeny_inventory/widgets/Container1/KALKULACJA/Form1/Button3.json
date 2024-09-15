@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 46,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -14,6 +14,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -31,9 +32,9 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajpozycje.run();\nresetWidget(\"szerokosc_input\", true);\nresetWidget(\"podawana_wysokosc_input\", true);\nresetWidget(\"Select8\", true);\nresetWidget(\"sku_input\", true);\nresetWidget(\"index_szer_input\", true);\nresetWidget(\"index_wys_input\", true);\nresetWidget(\"wysokosc_input\", true);\nresetWidget(\"cena_systemu\", true);\nresetWidget(\"rodzajwysokosci\", true);}}",
-  "originalBottomRow": 45,
-  "originalTopRow": 41,
+  "onClick": "{{dodajpozycje.run();\nresetWidget(\"Input8\", true);\nresetWidget(\"szerokosc_input\", true);\nresetWidget(\"podawana_wysokosc_input\", true);\nresetWidget(\"sku_input\", true);\nresetWidget(\"index_szer_input\", true);\nresetWidget(\"index_wys_input\", true);\nresetWidget(\"wysokosc_input\", true);\nremoveValue('sku_value');\nclearStore();\nresetWidget(\"Input8\", true);}}",
+  "originalBottomRow": 46,
+  "originalTopRow": 42,
   "parentId": "8jwyu0isum",
   "placement": "CENTER",
   "recaptchaType": "V3",
@@ -42,7 +43,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "text": "Submit",
-  "topRow": 41,
+  "topRow": 42,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "62mfgn32dn",

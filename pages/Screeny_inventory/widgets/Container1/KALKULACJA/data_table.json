@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "1px",
   "borderWidth": "1",
-  "bottomRow": 188,
+  "bottomRow": 208,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "button": {
@@ -90,9 +90,6 @@
   },
   "displayName": "Table",
   "dynamicBindingPathList": [
-    {
-      "key": "tableData"
-    },
     {
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
@@ -185,14 +182,14 @@
     },
     {
       "key": "primaryColumns.ilosc.computedValue"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "tableData"
     },
     {
       "key": "borderRadius"
@@ -232,8 +229,8 @@
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 188,
-  "originalTopRow": 101,
+  "originalBottomRow": 208,
+  "originalTopRow": 121,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -1190,7 +1187,7 @@
   "serverSidePaginationEnabled": true,
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
-  "topRow": 101,
+  "topRow": 121,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "DEFAULT",
