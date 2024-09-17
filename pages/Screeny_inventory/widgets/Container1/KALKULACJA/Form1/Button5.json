@@ -14,11 +14,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -36,7 +32,7 @@
   "mobileRightColumn": 29,
   "mobileTopRow": 29,
   "needsErrorInfo": false,
-  "onClick": "{{\nclearStore();\n\n{{danesku.run()\n.then(() => cena_zapytaj.run())\n\t\t.then(() => napedwybrany.run())\n\t\t.then(() => showAlert('done'))\n }};\n }}\n\n ",
+  "onClick": "{{wysokosccala.wys2();}}",
   "originalBottomRow": 37,
   "originalTopRow": 33,
   "parentColumnSpace": 19.3134765625,

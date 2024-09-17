@@ -45,7 +45,7 @@
   "mobileRightColumn": 18,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onTextChanged": "{{cenarazem.razem();}}",
+  "onTextChanged": "",
   "originalBottomRow": 15,
   "originalTopRow": 8,
   "parentColumnSpace": 18.6884765625,

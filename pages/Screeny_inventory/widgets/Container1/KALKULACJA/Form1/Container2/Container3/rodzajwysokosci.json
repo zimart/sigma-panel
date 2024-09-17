@@ -47,7 +47,7 @@
   "mobileRightColumn": 6,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{removeValue('sku_value');\nremoveValue('calkowita');\nwysokosccala.wys2();\nstoreValue('calkowita', wysokosc_input.text);\nindekswys.run();\nskrzynka_zapytaj.run();\n\n{{indekswys.run()\n.then(() => skrzynka_zapytaj.run())\n}}\n\n}}",
+  "onOptionChange": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 7,

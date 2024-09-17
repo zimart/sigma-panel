@@ -13,11 +13,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -35,7 +31,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onClick": "{{cenarazem.razem();\ncena_zapytaj.run()}}",
+  "onClick": "{{clearStore()}}",
   "originalBottomRow": 51,
   "originalTopRow": 47,
   "parentColumnSpace": 18.6884765625,

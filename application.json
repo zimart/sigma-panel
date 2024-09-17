@@ -92,6 +92,10 @@
     {
       "id": "Screeny_tabelaindeksy",
       "isDefault": false
+    },
+    {
+      "id": "Screeny_inventory Copy",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

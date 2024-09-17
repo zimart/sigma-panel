@@ -66,7 +66,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onBlur": "{{removeValue('sku_value');\nwysokosccala.wys2();\nstoreValue('calkowita', wysokosc_input.text);\n{{\n    indekswys.run()\n     .then(() => skrzynka_zapytaj.run())   \n      \n }};\n }}",
+  "onBlur": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => indekswys.run())\n.then(() => skrzynka_zapytaj.run())\n}}\n",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 4,
