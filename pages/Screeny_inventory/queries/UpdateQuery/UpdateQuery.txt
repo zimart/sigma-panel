@@ -10,4 +10,5 @@ UPDATE screeny_inventory SET
 		rabatsystem = '{{update_form.fieldState.rabatsystem.isVisible ? update_form.formData.rabatsystem : update_form.sourceData.rabatsystem}}',
 		linia = '{{update_form.fieldState.linia.isVisible ? update_form.formData.linia : update_form.sourceData.linia}}',
 		system = '{{update_form.fieldState.system.isVisible ? update_form.formData.system : update_form.sourceData.system}}'
+		
   WHERE id = {{data_table.selectedRow.id}};

@@ -230,8 +230,7 @@
           "label": "Cenakatalogowanaped",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "cenakatalogowanaped",
-          "position": 4,
-          "sourceData": null
+          "position": 4
         },
         "moc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",

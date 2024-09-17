@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 47,
+  "bottomRow": 51,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -11,6 +11,11 @@
     },
     {
       "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -30,16 +35,16 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onClick": "{{skrzynka_zapytaj.run();\ndanesku.run()}}",
-  "originalBottomRow": 47,
-  "originalTopRow": 43,
+  "onClick": "{{cenarazem.razem();\ncena_zapytaj.run()}}",
+  "originalBottomRow": 51,
+  "originalTopRow": 47,
   "parentColumnSpace": 18.6884765625,
   "parentId": "8jwyu0isum",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 30,
-  "topRow": 43,
+  "topRow": 47,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "0o83cucggz",

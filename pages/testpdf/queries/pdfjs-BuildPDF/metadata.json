@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "pdfjs.BuildPDF",
     "name": "BuildPDF",
     "pageId": "testpdf",

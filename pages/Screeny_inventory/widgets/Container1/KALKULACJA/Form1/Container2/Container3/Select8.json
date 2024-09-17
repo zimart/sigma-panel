@@ -38,7 +38,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{wysokosc_input.text > 0}}",
+  "isVisible": "{{index_wys_input.text > 0}}",
   "key": "pomnq6978w",
   "labelAlignment": "left",
   "labelPosition": "Top",

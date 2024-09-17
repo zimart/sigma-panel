@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 4,
   "boxShadow": "none",
   "defaultText": "{{appsmith.store.sku_value}}",
   "dynamicBindingPathList": [
@@ -15,10 +15,17 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
@@ -30,7 +37,7 @@
   "isLoading": false,
   "isRequired": true,
   "isSpellCheck": true,
-  "isVisible": true,
+  "isVisible": "{{Select8.selectedOptionValue > 0}}",
   "key": "iyb187w358",
   "label": "SKU",
   "labelAlignment": "left",
@@ -38,7 +45,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 37,
+  "leftColumn": 31,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -47,7 +54,7 @@
   "mobileRightColumn": 36,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onTextChanged": "{{storeValue('sku_value', tymczasowy.text);\ndanesku.run();}}",
+  "onTextChanged": "{{removeValue('sku_value');\nstoreValue('sku_value', tymczasowy.text);\ndanesku.run();\ncena_zapytaj.run();\ncenarazem.razem();}}",
   "originalBottomRow": 28,
   "originalTopRow": 21,
   "parentColumnSpace": 19.59375,
@@ -56,9 +63,9 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 46,
+  "rightColumn": 40,
   "showStepArrows": false,
-  "topRow": 2,
+  "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "yvewe93g7x",

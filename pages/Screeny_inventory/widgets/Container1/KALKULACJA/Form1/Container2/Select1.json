@@ -4,16 +4,16 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "PREMIUM",
   "dynamicBindingPathList": [
-    {
-      "key": "sourceData"
-    },
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -47,14 +47,14 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{system_zapytaj.run();\nstoreValue('liniazapisz', Select1.selectedOptionValue);\ncena_zapytaj.run();}}",
+  "onOptionChange": "{{system_zapytaj.run();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,
   "originalTopRow": 25,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "WYBIERZ LINIĘ",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 5,

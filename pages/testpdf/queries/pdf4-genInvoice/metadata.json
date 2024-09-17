@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "pdf4.genInvoice",
     "name": "genInvoice",
     "pageId": "testpdf",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

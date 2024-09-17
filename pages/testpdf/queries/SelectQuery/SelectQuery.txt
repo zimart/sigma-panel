@@ -1,5 +1,1 @@
-SELECT * FROM screeny_inventory
-WHERE skugen like '%{{data_table.searchText || ""}}%'
-ORDER BY {{data_table.sortOrder.column || 'id'}} {{data_table.sortOrder.order || "ASC"}}
-LIMIT {{data_table.pageSize}}
-OFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};
+SELECT skugen,skrzynka,linia,system,szerokosc FROM screeny_inventory;

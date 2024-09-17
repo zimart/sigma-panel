@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "1px",
   "borderWidth": "1",
-  "bottomRow": 208,
+  "bottomRow": 212,
   "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "childStylesheet": {
     "button": {
@@ -51,6 +51,7 @@
     "fk_oferty_inventory_id",
     "powierzchnia",
     "ilosc",
+    "concat",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -58,7 +59,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1726263525129,
+  "columnUpdatedAt": 1726513640066,
   "compactMode": "DEFAULT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
@@ -184,6 +185,9 @@
       "key": "primaryColumns.ilosc.computedValue"
     },
     {
+      "key": "primaryColumns.concat.computedValue"
+    },
+    {
       "key": "tableData"
     }
   ],
@@ -229,8 +233,8 @@
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 208,
-  "originalTopRow": 121,
+  "originalBottomRow": 212,
+  "originalTopRow": 125,
   "parentColumnSpace": 16.3125,
   "parentId": "o2y8szuai7",
   "parentRowSpace": 10,
@@ -262,6 +266,40 @@
       "label": "cena",
       "notation": "standard",
       "originalId": "cena",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "concat": {
+      "alias": "concat",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( ''))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "concat",
+      "index": 27,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "concat",
+      "notation": "standard",
+      "originalId": "concat",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1182,12 +1220,12 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 46,
+  "rightColumn": 14,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{SelectQuery.data}}",
   "textSize": "0.875rem",
-  "topRow": 121,
+  "topRow": 125,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "DEFAULT",

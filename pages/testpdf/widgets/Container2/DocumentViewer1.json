@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "bottomRow": 42,
-  "docUrl": "{{pdf4.genInvoice.data}}",
+  "docUrl": "{{pdfjs3.BuildPDF.data}}",
   "dynamicBindingPathList": [
     {
       "key": "docUrl"

@@ -2,7 +2,7 @@ export default {
     genPDF: () => {
         const doc = new jspdf.jsPDF();
         doc.text ('Timesheet',20,20);
-        doc.table(20, 30, Table4.tableData, Table4.columnOrder, {autosize: true});
+       // doc.table (20, 30, Table4.tableData, Table4.columnOrder, {autosize: true});
         download(doc.output(), 'timesheet.pdf');
     },
     debug: () => {

@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "23%",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -48,7 +48,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 25,
+  "rightColumn": 23,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"23%\",\n    \"code\": \"23\"\n  },\n  {\n    \"name\": \"8%\",\n    \"code\": \"8\"\n  },\n  {\n    \"name\": \"0%\",\n    \"code\": \"0\"\n  }\n]",
   "topRow": 0,

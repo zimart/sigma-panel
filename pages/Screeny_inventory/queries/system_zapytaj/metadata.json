@@ -30,6 +30,6 @@
     "executeOnLoad": true,
     "name": "system_zapytaj",
     "pageId": "Screeny_inventory",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
